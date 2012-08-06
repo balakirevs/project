@@ -13,6 +13,7 @@ gem 'russian', '~> 0.6.0'
 gem 'thin'
 gem 'translit'
 gem 'dynamic_form'
+gem "fog"
 #gem 'rutils'
 #gem 'capistrano'
 #gem 'unicorn'

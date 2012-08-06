@@ -1,6 +1,9 @@
 # encoding: utf-8
 
 class ImageUploader < CarrierWave::Uploader::Base
+  def default_url
+    "/images/fallback/" + [version_name, "default.png"].compact.join('_')
+  end
 
   # Include RMagick or MiniMagick support:
   include CarrierWave::RMagick
